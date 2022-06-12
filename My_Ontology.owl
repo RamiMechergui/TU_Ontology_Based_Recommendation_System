@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#"
+     xml:base="https://tuapirecommendationsystem.herokuapp.com/My_Ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:My_Ontology="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#">
+    <owl:Ontology rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Corresponding_City -->
+
+    <owl:DatatypeProperty rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Corresponding_City">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Data_Endpoint -->
+
+    <owl:DatatypeProperty rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Data_Endpoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Endpoint -->
+
+    <owl:DatatypeProperty rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Endpoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Title -->
+
+    <owl:DatatypeProperty rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Type_Of_Request -->
+
+    <owl:DatatypeProperty rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Type_Of_Request">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data"/>
+        <rdfs:domain rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Name -->
+
+    <owl:DatatypeProperty rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data -->
+
+    <owl:Class rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data"/>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data -->
+
+    <owl:Class rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#User -->
+
+    <owl:Class rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Drop_Out_Data -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Drop_Out_Data">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data"/>
+        <Topic_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/rates/Drop_out</Topic_Endpoint>
+        <Topic_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drop_out</Topic_Title>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Expenditure_Data -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Expenditure_Data">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data"/>
+        <Topic_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/total_Cost_per_student</Topic_Endpoint>
+        <Topic_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Expenditure</Topic_Title>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Private_Data -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Private_Data">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data"/>
+        <Topic_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/Prop-private-total-student</Topic_Endpoint>
+        <Topic_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private Data</Topic_Title>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Public_Data -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Public_Data">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data"/>
+        <Topic_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/Prop-private-total-student</Topic_Endpoint>
+        <Topic_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Data</Topic_Title>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Success_Data -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Success_Data">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data"/>
+        <Topic_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/rates/Success</Topic_Endpoint>
+        <Topic_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Success</Topic_Title>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Of_Ezzitouna -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Of_Ezzitouna">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tunis</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Ezzitouna</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University Of Ezzitouna</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Carthage -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Carthage">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tunis Nabeul Bizerte</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Carthage</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Cartage</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Gabes -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Gabes">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gabes Medinine Tataouine</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Gabes</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Gabes</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Gafsa -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Gafsa">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gafsa Tozeur</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Gafsa</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Gafsa</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Jendouba -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Jendouba">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jendouba Kef Beja</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Jendouba</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Jendouba</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Kairouan -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Kairouan">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kairouan Sidi Bouzid Kasserine</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Kairouan</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Kairouan</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Manouba -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Manouba">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tunis Manouba</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Manouba</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Manouba</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Monastir -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Monastir">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monastir</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Jendouba</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Monastir</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Sfax -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Sfax">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sfax</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Jendouba</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Sfax</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Sousse -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Sousse">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sousse</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Sousse</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Sousse</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Tunis -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Tunis">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tunis</Corresponding_City>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tunis Zaghouan</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Tunis</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Tunis</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Tunis_el_manar -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_of_Tunis_el_manar">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tunis</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/University of Tunis el manar</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Tunis el manar</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Virtual_University -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Virtual_University">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tunis</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/Virtual University</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Virtual University</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Directorate_General_for_Technology_Studies_(DGET) -->
+
+    <owl:NamedIndividual rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Directorate_General_for_Technology_Studies_(DGET)">
+        <rdf:type rdf:resource="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+        <Corresponding_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ben Arous</Corresponding_City>
+        <Data_Endpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/user/list_of_universities/Directorate General for Technology Studies (DGET)</Data_Endpoint>
+        <Type_Of_Request rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Get</Type_Of_Request>
+        <University_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Directorate General for Technology Studies (DGET)</University_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#Topic_Linked_Data"/>
+            <rdf:Description rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#University_Linked_Data"/>
+            <rdf:Description rdf:about="https://tuapirecommendationsystem.herokuapp.com/My_Ontology#User"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

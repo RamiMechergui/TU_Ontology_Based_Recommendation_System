@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container d-flex justify-content-center align-items-center ">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you've successfully signed up </p>
+            <hr>
+            <p class="mb-0">So Our recommendation system is suggesting the following endpoints that may interest you</p>
+        </div>
+    </div>
+    <div class="card text-center">
+        <div class="card-header">
+            University Related Data <span class="badge rounded-pill text-bg-success">1st Proposition</span>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Endpoint :&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">{{ Endpoint_1 }}</a>
+            </h5>
+        </div>
+        <div class="card-footer text-muted">
+            Description
+        </div>
+    </div>
+    <div class="card text-center m-1">
+        <div class="card-header">
+            Topic Related Data <span class="badge rounded-pill text-bg-success">2nd Proposition</span>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Endpoint : &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">{{ Endpoint_2}}</a>
+            </h5>
+        </div>
+        <div class="card-footer text-muted">
+            Description
+        </div>
+    </div>
+
+
+
+{% endblock %}

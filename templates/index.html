@@ -1,0 +1,91 @@
+{%extends "base.html" %}
+{%block content%}
+
+<div class="container d-flex justify-content-center align-items-center " >
+    <form action="/subscriber" method="POST">
+        <div class="d-flex justify-content-center">
+            <span class="align-self-center  badge text-bg-success" style="font-size: 1rem;font-weight: 20;"> Singing up & Picking preferences process </span>
+        </div>
+        <div class="row mt-3">
+            <div class="col ">
+                <input type="text" style="font-size: 14px;" class="form-control" placeholder="First name"
+                       name="First_Name">
+            </div>
+            <div class="col ">
+                <input type="text" style="font-size: 14px;" class="form-control" placeholder="Last name"
+                       name="Last_Name">
+            </div>
+        </div>
+        <label  style="font-size: 14px;margin-top: 10px;" class="form-label">Place of birth</label>
+        <select class="form-select" style="font-size: 14px" aria-label="Default select example" name="Place_of_Birth">
+            <option selected> Choose your place of birth </option>
+            <option value="Tunis"> Tunis </option>
+            <option value="Ben Arous"> Ben Arous </option>
+            <option value="Manouba"> Manouba </option>
+            <option value="Gabes"> Gabes </option>
+            <option value="Tatouine"> Tatouine </option>
+            <option value="Sfax"> Sfax </option>
+            <option value="Tozeur"> Tozeur </option>
+            <option value="Beja"> Beja </option>
+            <option value="Kef"> Kef </option>
+            <option value="Jendouba"> Jendouba </option>
+            <option value="Sidi Bouzid"> Sidi Bouzid </option>
+            <option value="Siliana"> Siliana </option>
+            <option value="Sousse"> Sousse </option>
+            <option value="Zaghouan"> Zaghouan </option>
+            <option value="Nabeul"> Nabeul </option>
+            <option value="Mahdia"> Mahdia </option>
+            <option value="Kairouan"> Kairouan </option>
+            <option value="Kasserine"> Kasserine </option>
+            <option value="Kebili"> Kebili </option>
+            <option value="Ben Arous"> Ben Arous </option>
+            <option value="Ariana"> Ariana </option>
+            <option value="Bizerte"> Bizerte </option>
+            <option value="Gafsa"> Gafsa </option>
+        </select>
+        <div class="ms-1 fs-6 " style="margin-top: 5px;">
+            <label for="exampleInputEmail1" style="font-size: 14px;" class="form-label">Email address</label>
+            <input type="email" style="font-size: 14px;" class="form-control" id="exampleInputEmail1"
+                   name="Email">
+            <div id="emailHelp" style="font-size: 14px;" class="form-text">We'll never share your email with anyone
+                else.
+            </div>
+        </div>
+        <div class="ms-1 fs-6">
+            <label style="font-size: 14px;" for="exampleInputPassword1" class="form-label">Password</label>
+            <input style="font-size: 14px;" type="password" class="form-control" id="exampleInputPassword1" name="Password">
+        </div>
+        <label  style="font-size: 14px;margin-top: 10px;" class="form-label">Pick the university that you're intersted in</label>
+        <select class="form-select" style="font-size: 14px" aria-label="Default select example" name="Chosen_University">
+            <option selected> Pick a university </option>
+            <option value="University of Tunis"> University of Tunis	 </option>
+            <option value="University of Ezzitouna"> University of Ezzitouna	 </option>
+            <option value="University of Sfax"> University of Sfax	 </option>
+            <option value="University of Gabes"> University of Gabes	 </option>
+            <option value="University of Kairouan"> University of Kairouan	 </option>
+            <option value="University of Monastir"> University of Monastir	 </option>
+            <option value="University of Sousse"> University of Sousse </option>
+            <option value="University of Gafsa"> University of Gafsa </option>
+            <option value="University of Jendouba"> University of Jendouba </option>
+            <option value="University of Manouba"> University of Manouba </option>
+            <option value="University of Carthage"> University of Carthage </option>
+            <option value="University of Tunis el manar"> University of Tunis el manar </option>
+            <option value="Directorate General for Technology Studies (DGET)"> Directorate General for Technology Studies (DGET) </option>
+            <option value="Virtual University"> Virtual University </option>
+        </select>
+                <label  style="font-size: 14px;margin-top: 10px;" class="form-label"> Pick the topic that you're intersted in</label>
+        <select class="form-select" style="font-size: 14px" aria-label="Default select example" name="Chosen_Topic">
+            <option selected> Pick a topic </option>
+            <option value="Sucess rates"> Sucess rates  </option>
+            <option value="Drop-out rates"> Drop-out rates  </option>
+            <option value="Expenditures"> Expenditures </option>
+            <option value="Public sector"> Public sector </option>
+            <option value="Private sector"> Private sector </option>
+        </select>
+        <div class="m-2 d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary align-self-center" style="font-size: 0.75rem;font-weight: 20;">Save and move to preferences</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
